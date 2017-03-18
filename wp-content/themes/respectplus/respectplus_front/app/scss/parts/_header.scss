@@ -1,0 +1,240 @@
+.container_header_wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.contact_header_block {
+  background: $colorblack;
+}
+
+.header_phone_block {
+  margin-top: 13px;
+
+  span, i {
+    display: inline-block;
+    vertical-align: middle;
+    color: #aaaaaa;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  i {
+    padding-right: 5px;
+  }
+}
+
+.header_social_box {
+  float: right !important;
+  .header_social_icons {
+    list-style: none;
+    font-size: 0;
+    margin: 0;
+    float: right;
+  }
+  .social_icons_element {
+    display: inline-block;
+    border-left: 2px solid #222222;
+    font-size: 16px;
+    padding: 10px;
+    text-align: center;
+    &:last-child {
+      border-right: 2px solid #222222;
+    }
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      transition: 1s;
+      @include color-link(#aaaaaa);
+      &:hover {
+        color: #fff;
+        transition: 1s;
+      }
+    }
+  }
+}
+
+.header_contact_row {
+  position: relative;
+}
+
+.header_logo_box {
+  position: absolute;
+  z-index: 999;
+  width: 240px;
+  height: 120px;
+  background: $colorred;
+  img {
+    margin: 17px 0 0 20px;
+  }
+  h1 {
+    color: #fff;
+    font-weight: 600;
+    margin: 0 0 0 20px;
+    a {
+      @include color-link(#fff);
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+  h2 {
+    margin: 0 0 0 20px;
+    font-size: 18px;
+    color: #fff;
+    a {
+      @include color-link(#fff);
+    }
+  }
+
+}
+/*--------------------------------------------------------*/
+              //Sticky logo box
+/*--------------------------------------------------------*/
+
+.sticky_header_logo_box {
+  position: absolute;
+  z-index: 999;
+  width: 240px;
+  height: 76px;
+  background: $colorred;
+  img {
+    margin: 2px 0 0 20px;
+    transform: scale(0.7);
+  }
+  h1 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    margin: -6px 0 0 30px;
+    a {
+      @include color-link(#fff);
+    }
+    span {
+      font-weight: 300;
+    }
+  }
+  h2 {
+    margin: -2px 0 0 29px;
+    color: #fff;
+    font-size: 16px;
+    a {
+      @include color-link(#fff);
+    }
+  }
+
+}
+
+.navigation_wrapper {
+  background: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+}
+
+.menu {
+  position: relative;
+  list-style: none;
+  font-size: 0;
+  margin: 0;
+  float: right;
+  li {
+    display: inline-block;
+    padding: 27px 10px;
+  }
+  li:not(.active_link) a:hover:after {
+    position: absolute;
+    content: '';
+    top: 20px;
+    left: 0;
+    border-radius: 5px;
+    width: 100%;
+    height: 2px;
+    background: $colorblack;
+    animation: menu_underline 0.7s;
+  }
+  a {
+    display: inline-block;
+    vertical-align: middle;
+    @include color-link(#333333);
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    position: relative;
+    width: inherit;
+
+  }
+}
+
+.submenu {
+  position: absolute;
+  padding: 0;
+  li {
+    display: block;
+    padding: 0;
+  }
+}
+
+.menu .submenu {
+  display: none;
+}
+
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  background: rgba(255, 255, 255, 0.6);
+
+  a {
+    padding: 10px;
+    width: 100%;
+  }
+  a:hover:after {
+    content: none !important;
+  }
+
+}
+
+.submenu li:hover {
+  background: rgba(216, 73, 73, 1);
+}
+
+.active_link a {
+  color: $colorred !important;
+}
+
+/*--------------------------------------------------------*/
+//Menu btn action css
+/*--------------------------------------------------------*/
+
+.menu_btn {
+  display: none;
+  cursor: pointer;
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+}
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.sticky {
+  position: fixed;
+  background: #fff;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+
+  transition: 1s;
+}

@@ -1,0 +1,31 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/animation";
+@import "parts/header";
+@import "parts/index";
+@import "parts/footer";
+
+* {
+  //box-sizing: border-box;
+}
+p,span,a,h1,h2.h3,h4,h5,h6 {
+  font-family: 'Roboto', sans-serif !important;
+
+}
+.row.no_mg {
+  margin: 0;
+}
+[class^="col-"].no_pd {
+  padding-right:0;
+  padding-left:0;
+}
+.container-fluid.no_pd {
+  padding-right: 0;
+  padding-left:0;
+}
+.container.no_pd {
+  padding-right: 0;
+  padding-left:0;
+}
+
+@import "helpers/media_queries";

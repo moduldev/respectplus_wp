@@ -1,0 +1,155 @@
+@media screen and (max-width: 1024px){
+  .remain_massage_box {
+    .remain_massage_btn {
+      margin-top: 120px;
+      padding: 20px 40px;
+      font-size: 20px;
+    }
+  }
+  .map_wrapper {
+    .advantage_title {
+      margin-top: 60px;
+    }
+  }
+  .index_main_img {
+    padding: 150px 0 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_logo_box {
+    width:190px;
+    height:100px;
+  }
+  .header_logo_box h1 {
+    margin: 0 0 0 5px;
+    font-size: 30px;
+  }
+  .header_logo_box h2 {
+    margin: 0 0 0 5px;
+    font-size: 14px;
+  }
+  .header_logo_box img {
+    margin: 10px 0 0 5px;
+  }
+  .menu_wrapper {
+    background: #fff;
+      .menu {
+        display: none;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        background: rgba(0,0,0,0.95);
+        padding:0;
+          li {
+            display: block;
+              a {
+                color: #fff;
+              }
+
+          }
+      }
+  }
+.menu  li:not(.active_link) a:hover:after {
+    content: none !important;
+  }
+  .sticky_header_logo_box {
+    height:57px;
+      img {
+        margin: 0 0 0 16px;
+        transform: scale(0.6);
+      }
+      h1 {
+        font-size: 23px;
+        margin: -9px 0 0 30px;
+      }
+      h2 {
+        margin: -4px 0 0 29px;
+        color: #fff;
+        font-size: 14px;
+      }
+  }
+  .menu_btn {
+    display: inline-block;
+    padding: 8px 10px 8px 0;
+    float: right !important;
+  }
+  .submenu {
+    position: static;
+      li {
+        background: #d84949;
+      }
+  }
+  .remain_massage_box {
+    padding: 50px 0 50px 0;
+  }
+  .remain_massage_box {
+    .remain_massage_btn {
+      margin-top: 40px;
+    }
+  }
+
+  .agency_offers_wrapper {
+    margin-top: 40px;
+    padding: 40px 0 40px 0;
+    background-color: #333333;
+    .row_line {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    i {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 16px;
+      margin-bottom:20px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 640px){
+  .remain_massage_box {
+    .index_main_img_title {
+      font-size: 30px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 480px){
+  .header_logo_box {
+    width: 165px;
+    h1 {
+      font-size: 27px;
+    }
+    h2 {
+      font-size: 13px;
+    }
+  }
+
+  .remain_massage_box {
+    .remain_massage_btn {
+      padding: 20px 20px;
+      font-size: 16px;
+    }
+  }
+  .index_main_img {
+    padding: 110px 0 20px;
+  }
+  .remain_massage_box {
+    padding: 25px 0 25px 0;
+  }
+  .copyright_box {
+    text-align: center;
+  }
+  .advantage_title {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+
+}
