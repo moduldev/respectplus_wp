@@ -1,6 +1,7 @@
 <?php
 require get_template_directory() . '/inc/function-walker.php';
 require get_template_directory() . '/inc/function-admin.php';
+require get_template_directory() . '/inc/function-sidebar.php';
 /*
 	 ====================================================
 		Include scripts
@@ -69,20 +70,3 @@ function respectplus_theme_setup() {
 }
 add_action('init','respectplus_theme_setup');
 
-/*
-	 ====================================================
-		Sidebar function
-	 ====================================================
- */
-function respectplus_widget_setup() {
-    register_sidebar(array(
-        'name' => 'Sidebar',
-        'id' => 'sidebar-1',
-        'class' => 'custom',
-        'description' => 'Standart sidebar',
-        'before_widget' => '<ul id="%1$s" class="widget %2$s">',
-        'after-widget' => '</ul>',
-        'before_title' => '<span class="widget-title">',
-        'after_title' => '</span>',
-    ));
-}

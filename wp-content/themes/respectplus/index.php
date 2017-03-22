@@ -44,31 +44,32 @@
     <div class="row no_mg">
         <div class="col-xs-12 col-sm-6 col-md-4 slider_text_box">
             <span class="advantage_title">Почему мы?</span>
+<!--            <div class="widget_wrapper">-->
+<!--                <i class="fa fa-plus" aria-hidden="true"></i>-->
+<!--                <i class="fa fa-minus" aria-hidden="true"></i>-->
+<!--                <span>Наши преимущества:</span>-->
+<!--                <div class="widget_container">-->
+<!--                    <ul>-->
+<!--                        <li class="">Обеспечивается надежность, качественная и прозрачная операция с недвижимостью:</li>-->
+<!--                        <li class="">Сделки (свыше 30%) осуществляются по рекомендации клиентов</li>-->
+<!--                        <li class="">Юридическое квалифицированное сопровождение</li>-->
+<!--                        <li class="">Финансовая безопасность</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
             <div class="widget_wrapper">
                 <i class="fa fa-plus" aria-hidden="true"></i>
                 <i class="fa fa-minus" aria-hidden="true"></i>
-                <span>Наши преимущества:</span>
-                <div class="widget_container">
-                    <ul>
-                        <li class="">Обеспечивается надежность, качественная и прозрачная операция с недвижимостью:</li>
-                        <li class="">Сделки (свыше 30%) осуществляются по рекомендации клиентов</li>
-                        <li class="">Юридическое квалифицированное сопровождение</li>
-                        <li class="">Финансовая безопасность</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="widget_wrapper">
-                <i class="fa fa-plus" aria-hidden="true"></i>
-                <i class="fa fa-minus" aria-hidden="true"></i>
-                <span>Наши преимущества:</span>
-                <div class="widget_container">
-                    <ul>
-                        <li class="">Обеспечивается надежность, качественная и прозрачная операция с недвижимостью:</li>
-                        <li class="">Сделки (свыше 30%) осуществляются по рекомендации клиентов</li>
-                        <li class="">Юридическое квалифицированное сопровождение</li>
-                        <li class="">Финансовая безопасность</li>
-                    </ul>
-                </div>
+<!--                <div class="widget_container">-->
+<!--                    <ul>-->
+<!--                        <li class="">Обеспечивается надежность, качественная и прозрачная операция с недвижимостью:</li>-->
+<!--                        <li class="">Сделки (свыше 30%) осуществляются по рекомендации клиентов</li>-->
+<!--                        <li class="">Юридическое квалифицированное сопровождение</li>-->
+<!--                        <li class="">Финансовая безопасность</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+                <?php dynamic_sidebar('sidebar-1') ?>
+                <?php dynamic_sidebar('sidebar-2') ?>
             </div>
         </div>
         <div class="col-xs-12 col-sm-6 col-md-4 ">
