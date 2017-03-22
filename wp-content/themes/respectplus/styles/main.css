@@ -350,27 +350,38 @@
   font-weight: 700;
   text-transform: uppercase; }
 
-.slider_text_box > div:nth-child(2) .widget_container {
-  display: block; }
-
-.widget_wrapper ul {
+.side-advantages ul {
   list-style: square;
   margin: 0;
   padding: 0 0 0 18px; }
 
-.widget_wrapper {
+.side-advantages {
   position: relative;
   padding: 5px;
   border: 1px solid #333333;
   margin-bottom: 10px;
   overflow: hidden; }
-  .widget_wrapper i {
-    position: absolute;
-    right: 15px;
-    top: 5px;
-    cursor: pointer; }
-  .widget_wrapper .fa-minus {
-    display: none; }
+
+.widget_wrapper .side-advantages.widget:after {
+  content: '-';
+  position: absolute;
+  font-size: 27px;
+  font-weight: 700;
+  top: -5px;
+  right: 4px;
+  cursor: pointer; }
+
+.widget_wrapper .side-advantages:after {
+  content: '+';
+  position: absolute;
+  font-size: 25px;
+  font-weight: 700;
+  top: 0;
+  right: 0;
+  cursor: pointer; }
+
+.widget-title {
+  font-weight: 700; }
 
 .widget_container {
   display: none; }
@@ -422,6 +433,12 @@ p, span, a, h1, h2.h3, h4, h5, h6 {
 .container.no_pd {
   padding-right: 0;
   padding-left: 0; }
+
+.hide {
+  display: none; }
+
+.show {
+  display: block; }
 
 @media screen and (max-width: 1024px) {
   .remain_massage_box .remain_massage_btn {
