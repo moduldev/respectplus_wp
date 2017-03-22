@@ -6,14 +6,14 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-<!--    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
-<!--    <link rel="stylesheet" href="css/main.css">-->
-<!--    <link rel="stylesheet" href="css/maps/main.css.map">-->
-<!--    <link rel="stylesheet" href="css/bootstrap.css">-->
-<!--    <link rel="stylesheet" href="css/font-awesome.min.css">-->
+    <!--    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">-->
+    <!--    <link rel="stylesheet" href="css/main.css">-->
+    <!--    <link rel="stylesheet" href="css/maps/main.css.map">-->
+    <!--    <link rel="stylesheet" href="css/bootstrap.css">-->
+    <!--    <link rel="stylesheet" href="css/font-awesome.min.css">-->
     <?php wp_head(); ?>
 </head>
-<body <?php body_class();?>>
+<body <?php body_class(); ?>>
 <header class="container-fluid container_header_wrapper no_pd">
     <div class=" container-fluid contact_header_block no_pd ">
         <div class="container  no_pd">
@@ -35,7 +35,8 @@
                     </ul>
                 </div>
                 <div class="header_logo_box" id="logo_box">
-                    <img src="<?php echo get_template_directory_uri();?>/img/index/header-logo.png" class="img-responsive" alt="Respect plus">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/index/header-logo.png"
+                         class="img-responsive" alt="Respect plus">
                     <h1><a href="#">Respect<span>Plus</span></a></h1>
                     <h2><a href="#">Агенство недвижимости</a></h2>
                 </div>
@@ -51,30 +52,13 @@
                 <div class="bar3"></div>
             </div>
             <nav class="col-xs-12 menu_wrapper  no_pd clearfix">
-<!--                <ul class="menu">-->
-<!--                    <li class="active_link"><a class="" href="#">Домой</a></li>-->
-<!--                    <li><a href="#">Объекты</a></li>-->
-<!--                    <li><a href="#">Риелторы</a></li>-->
-<!--                    <li><a href="#">Разное</a>-->
-<!--                        <ul class="submenu">-->
-<!--                            <li><a href="#">Тест</a></li>-->
-<!--                            <li><a href="#">Тест</a></li>-->
-<!--                            <li><a href="#">Тест</a></li>-->
-<!--                            <li><a href="#">Тестdfdfdfdfdfd df</a></li>-->
-<!--                            <li><a href="#">Тест</a></li>-->
-<!--                        </ul>-->
-<!--                    </li>-->
-<!--                    <li><a href="#">Контакты</a></li>-->
-<!--                    <li><a href="#">О нас</a></li>-->
-<!--                </ul>-->
                 <?php wp_nav_menu(
 
                     array(
-                        'container'  => '',
+                        'container' => '',
                         'menu_class' => 'menu',
-                        'theme_location'  => 'primary',
+                        'theme_location' => 'primary',
                         'walker' => new Walker_Nav_Primary()
-
                     )
 
                 ); ?>
