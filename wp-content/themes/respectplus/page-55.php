@@ -8,7 +8,7 @@
 		</div>
 	</div>
 	<div class="row no_mg">
-		<section>
+		<section class="about_page_content_wrapper">
 			<div class="col-xs-8 col-md-8 ">
 				<?php if (have_posts()): while (have_posts()): the_post(); ?>
 

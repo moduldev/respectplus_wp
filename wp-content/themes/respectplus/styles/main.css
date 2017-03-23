@@ -457,6 +457,9 @@
 .main-heading {
   padding-top: 110px; }
 
+.about_page_content_wrapper {
+  font-size: 16px; }
+
 p, span, a, h1, h2.h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif !important; }
 
