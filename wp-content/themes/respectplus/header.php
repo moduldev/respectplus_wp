@@ -58,7 +58,7 @@
                         'container' => '',
                         'menu_class' => 'menu',
                         'theme_location' => 'primary',
-                        'walker' => new Walker_Nav_Primary()
+                        'walker' => new Walker_Nav_Primary(),
                     )
 
                 ); ?>

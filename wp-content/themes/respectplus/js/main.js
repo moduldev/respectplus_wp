@@ -1,19 +1,16 @@
 
-
+// Switcher advantage widget
 $(function ($) {
+    $('.widget_wrapper > .side-advantages').removeClass('widget');
+    $('.widget_wrapper .side-advantages:nth-child(1)').addClass('widget');
+
     var widgetInnerWrapper = $('.widget_wrapper .textwidget');
     widgetInnerWrapper.fadeOut('fast');
     $('.widget_wrapper .side-advantages:nth-child(1) .textwidget ').fadeIn('fast');
 
-    if($('.widget_wrapper .side-advantages:nth-child(1) .textwidget').is(':visible')) {
-        widgetInnerWrapper.addClass('.widget');
-
-    }
-
     $('.widget_wrapper .side-advantages').click(function () {
         $(this).toggleClass('widget');
         $(this).children('.textwidget').slideToggle('fast');
-
     })
 });
 

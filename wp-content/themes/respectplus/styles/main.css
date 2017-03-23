@@ -368,7 +368,7 @@
   font-size: 27px;
   font-weight: 700;
   top: -5px;
-  right: 4px;
+  right: 7px;
   cursor: pointer; }
 
 .widget_wrapper .side-advantages:after {
@@ -377,7 +377,7 @@
   font-size: 25px;
   font-weight: 700;
   top: 0;
-  right: 0;
+  right: 3px;
   cursor: pointer; }
 
 .widget-title {
@@ -395,10 +395,12 @@
   background: #111111; }
 
 .footer_title {
+  display: inline-block;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-bottom: 10px; }
 
 .copyright_box {
   border-top: 2px solid  #222222;
@@ -415,6 +417,45 @@
     .copyright_box a:visited {
       text-decoration: none;
       color: #d84949; }
+
+.footer_contact_widget ul {
+  padding: 0;
+  list-style: none;
+  color: #999999; }
+  .footer_contact_widget ul li {
+    position: relative;
+    padding: 0 0 0 20px;
+    font-size: 16px; }
+    .footer_contact_widget ul li i {
+      position: absolute;
+      color: #d84949;
+      top: 1px;
+      left: 0; }
+  .footer_contact_widget ul a {
+    color: #999999; }
+    .footer_contact_widget ul a:link {
+      text-decoration: none;
+      color: #999999; }
+    .footer_contact_widget ul a:visited {
+      text-decoration: none;
+      color: #999999; }
+
+.menu_footer_box {
+  padding: 0;
+  list-style: none; }
+  .menu_footer_box li {
+    font-size: 16px; }
+    .menu_footer_box li a {
+      color: #999999; }
+      .menu_footer_box li a:link {
+        text-decoration: none;
+        color: #999999; }
+      .menu_footer_box li a:visited {
+        text-decoration: none;
+        color: #999999; }
+
+.main-heading {
+  padding-top: 110px; }
 
 p, span, a, h1, h2.h3, h4, h5, h6 {
   font-family: 'Roboto', sans-serif !important; }

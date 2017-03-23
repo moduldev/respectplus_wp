@@ -5281,8 +5281,8 @@ msgid "The file 'wp-config.php' already exists. If you need to reset any of the 
 msgstr "Файл &laquo;wp-config.php&raquo; уже существует. Если вам нужно сбросить любой из находящихся в нём параметров, сначала удалите его. Теперь можно <a href='install.php'>запустить установку</a>."
 
 #: wp-admin/setup-config.php:49
-msgid "Sorry, I need a wp-config.php file to work from. Please re-upload this file to your WordPress installation."
-msgstr "Извините, мне нужен файл wp-config.php в качестве примера. Пожалуйста, загрузите его снова из дистрибутива."
+msgid "Sorry, I need a wp-config-sample.php file to work from. Please re-upload this file to your WordPress installation."
+msgstr "Извините, мне нужен файл wp-config-sample.php в качестве примера. Пожалуйста, загрузите его снова из дистрибутива."
 
 #. translators: %s: wp-config.php
 #: wp-admin/maint/repair.php:37

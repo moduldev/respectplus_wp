@@ -3,10 +3,12 @@
   background: #111111;
 }
 .footer_title {
+  display: inline-block;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
+  padding-bottom: 10px;
 }
 
 .copyright_box {
@@ -20,4 +22,38 @@
   a {
     @include color-link(#d84949);
   }
+}
+.footer_contact_widget {
+  ul {
+    padding:0;
+    list-style: none;
+    color: #999999;
+
+      li {
+        position: relative;
+        padding: 0 0 0 20px;
+        font-size: 16px;
+        i {
+          position: absolute;
+          color: #d84949;
+          top:1px;
+          left: 0;
+        }
+      }
+    a {
+      @include color-link(#999999);
+    }
+  }
+}
+.menu_footer_box {
+    padding:0;
+    list-style: none;
+      li {
+        font-size: 16px;
+        a {
+          @include color-link(#999999)
+        }
+
+      }
+
 }

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/respectplus_wp.iml" filepath="$PROJECT_DIR$/.idea/respectplus_wp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/respectplus.iml" filepath="$PROJECT_DIR$/.idea/respectplus.iml" />
     </modules>
   </component>
 </project>

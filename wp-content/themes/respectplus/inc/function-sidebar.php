@@ -34,8 +34,8 @@ function respectplus_widget_setup1() {
 		'name' => 'Sidebar',
 		'id' => 'sidebar-2',
 		'class' => 'custom',
-		'description' => 'Standart sidebar',
-		'before_widget' => '<div id="%1$s" class="side widget %2$s">', // по умолчанию виджеты выводятся <li>-списком
+		'description' => 'Footer contacts sidebar',
+		'before_widget' => '<div id="%1$s" class="footer_contact_widget widget %2$s">', // по умолчанию виджеты выводятся <li>-списком
 		'after_widget' => '</div>',
 		'before_title' => '<span class="widget-title">',
 		'after_title' => '</span>',

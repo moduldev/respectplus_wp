@@ -1,7 +1,8 @@
 <?php
-require get_template_directory() . '/inc/function-walker.php';
 require get_template_directory() . '/inc/function-admin.php';
 require get_template_directory() . '/inc/function-sidebar.php';
+require get_template_directory() . '/inc/function-menu.php';
+require get_template_directory() . '/inc/function-walker.php';
 /*
 	 ====================================================
 		Include scripts
@@ -57,16 +58,14 @@ add_theme_support('post-thumbnails');
 
 /*
 	 ====================================================
-		Activate menu
+		Activate search form
+	 ====================================================
+ */
+add_theme_support('html5',array('search-form'));
+/*
+	 ====================================================
+		Activate post formats
 	 ====================================================
  */
 
-function respectplus_theme_setup() {
-
-    add_theme_support('menus');
-
-    register_nav_menu('primary','Primary header navigation');
-
-}
-add_action('init','respectplus_theme_setup');
-
+add_theme_support('post-formats',array('aside','image','video'));
