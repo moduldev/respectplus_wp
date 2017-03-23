@@ -1,10 +1,19 @@
 
 
 $(function ($) {
-    $('.widget_wrapper').click(function () {
-        $(this).children('.widget_container').slideToggle();
-        $(this).children('.fa-plus').toggleClass('hide');
-        $(this).children('.fa-minus').toggleClass('show');
+    var widgetInnerWrapper = $('.widget_wrapper .textwidget');
+    widgetInnerWrapper.fadeOut('fast');
+    $('.widget_wrapper .side-advantages:nth-child(1) .textwidget ').fadeIn('fast');
+
+    if($('.widget_wrapper .side-advantages:nth-child(1) .textwidget').is(':visible')) {
+        widgetInnerWrapper.addClass('.widget');
+
+    }
+
+    $('.widget_wrapper .side-advantages').click(function () {
+        $(this).toggleClass('widget');
+        $(this).children('.textwidget').slideToggle('fast');
+
     })
 });
 
