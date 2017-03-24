@@ -51,7 +51,10 @@
       li {
         font-size: 16px;
         a {
-          @include color-link(#999999)
+          @include color-link(#999999);
+          &:hover {
+            text-decoration: underline !important;
+          }
         }
 
       }

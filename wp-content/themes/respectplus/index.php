@@ -48,19 +48,43 @@
                 <?php dynamic_sidebar('sidebar-1') ?>
             </div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-4 ">
+        <div class="col-xs-12 col-sm-6 col-md-4 clearfix">
             <span class="advantage_title">Новости</span>
-            <div class="advantage_news_mult_box">
-                <div class="advantage_news_date_box">
-                    <span>Feb 2014</span>
-                    <img src="" alt="">
-                </div>
-            </div>
-            <p class="advantage_text">
-                We have a total of 25+ years combined experience dealing exclusively with New York buyers and sellers.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <button class="btn read_more_btn">Читать дальше</button>
+            <?php
+            $args = array(
+                'posts_per_page' => 1,
+                'cat' => '5'
+            );
+
+            $query = new WP_Query( $args );
+            if ( $query->have_posts() ) {
+                while ( $query->have_posts() ) {
+                    $query->the_post();
+                    if(has_post_thumbnail()){ ?>
+                        <div class="advantage_news_mult_box ">
+                            <div class="advantage_news_date_box">
+                                <span><?php the_time( 'F j, Y' ); ?></span>
+                            </div>
+                            <?php the_post_thumbnail(); ?>
+                        </div>
+                        <div><?php the_title( sprintf( '<h1 class="content_news_title"><a href="%s">', esc_url( get_permalink() ), '</a></h1>' ) ); ?></div>
+
+
+                        <div class="advantage_text">
+
+                            <?php the_excerpt();?>
+                        </div>
+                        <button class="btn read_more_btn"><a href="<?php echo get_permalink()?>">Читать дальше</a></button>
+                  <?  }
+                }
+            } else {
+                get_the_title();
+                the_excerpt();
+            } ?>
+
+           <?php wp_reset_postdata();
+            ;?>
+
         </div>
         <div class=" col-xs-12 col-md-4 map_wrapper">
             <span class="advantage_title">Как нас найти?</span>

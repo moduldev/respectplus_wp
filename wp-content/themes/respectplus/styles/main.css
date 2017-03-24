@@ -317,13 +317,17 @@
   text-transform: uppercase; }
 
 .advantage_news_mult_box {
+  position: relative;
   width: 100%;
-  height: 208px;
   background-color: grey; }
+  .advantage_news_mult_box img {
+    width: 100%;
+    height: auto; }
 
 .advantage_news_date_box {
+  position: absolute;
   width: 100px;
-  height: 100px;
+  height: 55px;
   background-color: #d84949;
   text-align: center; }
   .advantage_news_date_box span {
@@ -453,6 +457,8 @@
       .menu_footer_box li a:visited {
         text-decoration: none;
         color: #999999; }
+      .menu_footer_box li a:hover {
+        text-decoration: underline !important; }
 
 .main-heading {
   padding-top: 110px; }
@@ -460,7 +466,17 @@
 .about_page_content_wrapper {
   font-size: 16px; }
 
-p, span, a, h1, h2.h3, h4, h5, h6 {
+.post_wrapper {
+  margin-bottom: 20px; }
+  .post_wrapper img {
+    width: 100%;
+    height: auto; }
+
+.content_excerpr_wrapper {
+  text-indent: 25px;
+  font-size: 16px; }
+
+p, span, a, h1, h2.h3, h4, h5, h6, li {
   font-family: 'Roboto', sans-serif !important; }
 
 .row.no_mg {
@@ -483,6 +499,9 @@ p, span, a, h1, h2.h3, h4, h5, h6 {
 
 .show {
   display: block; }
+
+.main_section {
+  padding-top: 145px; }
 
 @media screen and (max-width: 1024px) {
   .remain_massage_box .remain_massage_btn {

@@ -5,11 +5,12 @@
 @import "parts/index";
 @import "parts/footer";
 @import "parts/page";
+@import "parts/content";
 
 * {
   //box-sizing: border-box;
 }
-p,span,a,h1,h2.h3,h4,h5,h6 {
+p,span,a,h1,h2.h3,h4,h5,h6,li {
   font-family: 'Roboto', sans-serif !important;
 
 }
@@ -33,5 +34,8 @@ p,span,a,h1,h2.h3,h4,h5,h6 {
 }
 .show {
   display: block;
+}
+.main_section {
+  padding-top:145px;
 }
 @import "helpers/media_queries";
