@@ -115,7 +115,12 @@
       font-size: 30px;
     }
   }
-
+  .icon_load_more {
+    .load_more_text {
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+  }
 }
 
 @media screen and (max-width: 480px){

@@ -1,7 +1,7 @@
 <?php
 /*
 
-@package sunsettheme
+@package respectplus
 
 	========================
 		ADMIN PAGE

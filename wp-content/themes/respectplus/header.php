@@ -33,8 +33,8 @@
                 <div class="header_logo_box" id="logo_box">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/index/header-logo.png"
                          class="img-responsive" alt="Respect plus">
-                    <h1><a href="#">Respect<span>Plus</span></a></h1>
-                    <h2><a href="#">Агенство недвижимости</a></h2>
+                    <h1><a href="<?php echo home_url();?>">Respect<span>Plus</span></a></h1>
+                    <h2><a href="<?php echo home_url();?>">Агенство недвижимости</a></h2>
                 </div>
             </div>
         </div>

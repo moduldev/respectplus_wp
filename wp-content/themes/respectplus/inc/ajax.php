@@ -1,5 +1,0 @@
-<?php
-
-
-
-//Look function.php

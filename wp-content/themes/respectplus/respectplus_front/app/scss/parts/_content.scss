@@ -8,4 +8,42 @@
 .content_excerpr_wrapper {
   text-indent:25px;
   font-size: 16px;
+    iframe {
+      width: 100%;
+    }
+}
+.post_wrapper {
+  .read_more_btn {
+    text-indent: 0 ;
+    float: right;
+  }
+}
+.content_news_title_text {
+  @include color-link($colorblack);
+}
+.content_category_link {
+  a {
+    @include color-link($colorred);
+  }
+}
+.load_more_box {
+  margin-bottom: 30px;
+}
+.icon_load_more {
+  .load_more_text {
+    font-size: 25px;
+    text-transform: uppercase;
+  }
+  & > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.breadcrumbs {
+  a {
+    @include color-link($colorblack);
+  }
+  .current {
+    @include color-link($colorred)
+  }
 }

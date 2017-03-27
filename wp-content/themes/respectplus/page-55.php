@@ -1,5 +1,8 @@
 <?php get_header();?>
-<div class="container no_pd">
+<section class="container main_section no_pd">
+    <div class="col-xs-12">
+        <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
+    </div>
 	<div class="row no_mg">
 		<div class="col-xs-12">
 			<div class="main-heading">
@@ -20,7 +23,8 @@
 			<div class="col-xs-4 col-md4 no_pd">
 				<img class="img-responsive" src="<?php echo get_template_directory_uri();?> . /img/About/handshake.jpg" alt="">
 			</div>
+
 		</section>
 	</div>
-</div>
+</section>
 <?php get_footer();?>

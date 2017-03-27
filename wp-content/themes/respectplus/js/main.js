@@ -46,3 +46,38 @@ $(document).ready(function () {
        $('.menu').toggleClass('show');
    })
 });
+
+$(document).on('click', '.load-more:not(.loading)', function () {
+    var that = $(this);
+    var page = that.data('page');
+    var newPge = page+1;
+    var ajaxurl = that.data('url');
+
+    // that.addClass('loading').find('.load_more_text').slideUp(320);
+    that.find('i').addClass('fa-spin');
+    $.ajax({
+
+        url : ajaxurl,
+        type : 'post',
+        data : {
+            page : page,
+            action : 'load_more'
+        },
+        error : function (response) {
+            console.log(response);
+        },
+        success : function (response) {
+
+            setTimeout(function () {
+            that.data('page',newPge);
+            $('.main_section').append(response);
+                that.find('i').removeClass('fa-spin');
+                that.removeClass('loading');
+            }, 2000);
+            // that.addClass('loading').find('.load_more_text').slideDown(320);
+
+
+
+        }
+    })
+});

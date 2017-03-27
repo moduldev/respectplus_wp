@@ -1,8 +1,14 @@
 <?php
+require get_template_directory() . '/inc/function-breadcrumbs.php';
+require get_template_directory() . '/inc/function-ajax.php';
 require get_template_directory() . '/inc/function-admin.php';
 require get_template_directory() . '/inc/function-sidebar.php';
 require get_template_directory() . '/inc/function-menu.php';
 require get_template_directory() . '/inc/function-walker.php';
+
+
+
+
 /*
 	 ====================================================
 		Include scripts
