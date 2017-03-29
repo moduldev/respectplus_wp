@@ -4,8 +4,9 @@
         <div class="remain_massage_box">
             <h2 class="index_main_img_title">Агенство недвижимости Respect+</h2>
             <h2 class="index_main_img_title">Все виды операций с недвижимостью</h2>
-            <a href="http://respectplus/obekty/" class="btn remain_massage_btn">Поиск недвижимости <i class="fa fa-search"
-                                                                             aria-hidden="true"></i>
+            <a href="http://respectplus/obekty/" class="btn remain_massage_btn">Поиск недвижимости <i
+                        class="fa fa-search"
+                        aria-hidden="true"></i>
             </a>
             <a href="#" class="btn remain_massage_btn">Подать объявление <i class="fa fa-list-alt"
                                                                             aria-hidden="true"></i></a>
@@ -79,12 +80,21 @@
 
                                 <?php the_excerpt(); ?>
                             </div>
-                           <a class="btn read_more_btn" href="<?php echo get_permalink() ?>">Читать дальше</a>
-                        <? }
+                            <a class="btn read_more_btn" href="<?php echo get_permalink() ?>">Читать дальше</a>
+                        <? } else {
+                            ; ?>
+                                <div class="advantage_news_date_box">
+                                    <span><?php the_time('F j, Y'); ?></span>
+                                </div>
+                            <div class="clearfix"><?php the_title(sprintf('<h2 class="index_news_title"><a href="%s">', esc_url(get_permalink()), '</a></h2>')); ?></div>
+
+                            <div class="advantage_text">
+
+                                <?php the_excerpt(); ?>
+                            </div>
+                            <a class="btn read_more_btn" href="<?php echo get_permalink() ?>">Читать дальше</a>
+                        <?php }
                     }
-                } else {
-                    get_the_title();
-                    the_excerpt();
                 } ?>
 
                 <?php wp_reset_postdata();; ?>

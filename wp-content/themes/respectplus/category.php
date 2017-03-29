@@ -3,6 +3,7 @@
     <div class="col-xs-12">
         <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
     </div>
+    <div class="col-xs-12">
 <?php
 $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ;
 $arg = array('post_per_page'=>3,'paged'=>$currentPage);
@@ -20,7 +21,7 @@ if ( $posts ) : ?>
 <!--	<div class="pagination_container">-->
 <!--		--><?php //previous_posts_link('Новые записи ');?>
 <!--	</div>-->
-
+    </div>
 </section>
     <div class="container text-center load_more_box">
         <div class="col-xs-12 no_pd">

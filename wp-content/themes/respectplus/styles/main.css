@@ -548,6 +548,9 @@
     text-decoration: none;
     color: #d84949; }
 
+.content_news_title_text {
+  display: block; }
+
 p, span, a, h1, h2.h3, h4, h5, h6, li {
   font-family: 'Roboto', sans-serif !important; }
 
