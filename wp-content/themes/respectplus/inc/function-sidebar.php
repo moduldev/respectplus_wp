@@ -47,3 +47,28 @@ function respectplus_widget_setup1() {
 	 ====================================================
  */
 add_action('widgets_init','respectplus_widget_setup1');
+
+/*
+====================================================
+Sidebar function
+====================================================
+*/
+function respectplus_widget_setup2() {
+    register_sidebar(array(
+        'name' => 'Sidebar',
+        'id' => 'sidebar-3',
+        'class' => 'custom',
+        'description' => 'Page contacts sidebar',
+        'before_widget' => '<div id="%1$s" class="page_contact_widget widget %2$s">', // по умолчанию виджеты выводятся <li>-списком
+        'after_widget' => '</div>',
+        'before_title' => '<span class="widget-title">',
+        'after_title' => '</span>',
+    ));
+}
+/*
+	 ====================================================
+		Activate sidebar
+	 ====================================================
+ */
+add_action('widgets_init','respectplus_widget_setup2');
+

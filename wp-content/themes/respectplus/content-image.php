@@ -2,8 +2,7 @@
 <!--    --><?php //if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
 <!--</div>-->
 <article class="post_wrapper clearfix" <?php post_class('description_event'); ?> id="<?php the_ID(); ?>">
-    <div class="row no_mg">
-        <div class="col-xs-12">
+
             <?php the_title(sprintf('<h1 class="content_news_title"><a class="content_news_title_text" href="%s">', esc_url(get_permalink())), '</a></h1>'); ?>
             <div>
             <span class="event_time"></span><span><?php the_time('F j, Y, H:i '); ?></span>
@@ -26,8 +25,6 @@
                     <a class="btn read_more_btn text-right" href="<?php echo get_permalink() ?>">Подробнее</a>
                 <?php }; ?>
             </div>
-        </div>
 
-    </div>
 </article>
 

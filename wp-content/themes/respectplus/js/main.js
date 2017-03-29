@@ -70,7 +70,7 @@ $(document).on('click', '.load-more:not(.loading)', function () {
 
             setTimeout(function () {
             that.data('page',newPge);
-            $('.main_section').append(response);
+            $('.posts_wrapper').append(response);
                 that.find('i').removeClass('fa-spin');
                 that.removeClass('loading');
             }, 2000);

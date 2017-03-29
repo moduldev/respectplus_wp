@@ -50,3 +50,31 @@
 .content_news_title_text {
   display: block;
 }
+.sidebar_page {
+  box-sizing: border-box;
+  border: 1px solid #666666;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.75);
+  padding: 15px;
+  position: fixed;
+  text-align: center;
+    h5 {
+      font-size: 18px;
+      font-weight: 700;
+    }
+  a {
+    @include color-link($colorblack);
+      i {
+        font-size: 20px;
+      }
+  }
+  p {
+    font-weight: 400;
+  }
+   .sidebar_page_btn {
+     display: block;
+     margin-top: 25px;
+     text-transform: uppercase;
+     border-radius:0 !important;
+     background: $colorred;
+   }
+}

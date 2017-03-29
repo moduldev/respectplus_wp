@@ -551,6 +551,35 @@
 .content_news_title_text {
   display: block; }
 
+.sidebar_page {
+  box-sizing: border-box;
+  border: 1px solid #666666;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+  padding: 15px;
+  position: fixed;
+  text-align: center; }
+  .sidebar_page h5 {
+    font-size: 18px;
+    font-weight: 700; }
+  .sidebar_page a {
+    color: #111111; }
+    .sidebar_page a:link {
+      text-decoration: none;
+      color: #111111; }
+    .sidebar_page a:visited {
+      text-decoration: none;
+      color: #111111; }
+    .sidebar_page a i {
+      font-size: 20px; }
+  .sidebar_page p {
+    font-weight: 400; }
+  .sidebar_page .sidebar_page_btn {
+    display: block;
+    margin-top: 25px;
+    text-transform: uppercase;
+    border-radius: 0 !important;
+    background: #d84949; }
+
 p, span, a, h1, h2.h3, h4, h5, h6, li {
   font-family: 'Roboto', sans-serif !important; }
 
