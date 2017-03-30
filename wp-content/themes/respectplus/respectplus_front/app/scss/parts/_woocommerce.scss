@@ -1,0 +1,28 @@
+.page_contact_widget  {
+  display: inline-block;
+  text-align: center;
+
+}
+
+.products  {
+   li {
+     display: block;
+     padding: 10px !important;
+     width:100% !important;
+     border: 1px solid #666666;
+     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.75);
+     margin: 0 0 20px 0 !important;
+     float: none !important;
+   }
+  h3 {
+    display: inline-block;
+    vertical-align: top;
+  }
+  }
+.woocommerce ul.products li.product a img {
+  display: inline-block !important;
+  width: 25% !important;
+  height: auto;
+  margin: 0 0 1em;
+  box-shadow: none;
+}

@@ -67,4 +67,35 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 */
 	do_action( 'woocommerce_after_shop_loop_item' );
 	?>
+
+
+    <div class="attributes_wrapper">
+
+    <?php echo $product->sku; ?> <?php echo $product->omschrijving; ?> <?php the_title(); ?>
+
+    <?php
+    // Get the attributes
+    $attributes = $product->get_attributes();
+    // Start the loop
+    foreach ( $attributes as $attribute ) : ?>
+
+        <?php
+// Check and output, adopted from /templates/single-product/product-attributes.php
+        if ( $attribute['is_taxonomy'] ) {
+            $values = wc_get_product_terms( $product->id, $attribute['name'], array( 'fields' => 'names' ) );
+            echo apply_filters( 'woocommerce_attribute', wpautop( wptexturize( implode( ', ', $values ) ) ), $attribute, $values );
+        } else {
+            // Convert pipes to commas and display values
+            $values = array_map( 'trim', explode( WC_DELIMITER, $attribute['value'] ) );
+            echo apply_filters( 'woocommerce_attribute', wpautop( wptexturize( implode( ', ', $values ) ) ), $attribute, $values );
+        }
+        ?>
+
+    <?php endforeach; ?>
+
+    </div>
+
+
+
+
 </li>

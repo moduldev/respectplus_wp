@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 <section class="container main_section no_pd">
-	<div class="col-xs-12">
-		<?php if ( function_exists( 'dimox_breadcrumbs' ) ) {
-			dimox_breadcrumbs();
-		} ?>
-	</div>
+<!--	<div class="col-xs-12">-->
+<!--		--><?php //if ( function_exists( 'dimox_breadcrumbs' ) ) {
+//			dimox_breadcrumbs();
+//		} ?>
+<!--	</div>-->
 
 	<section class="about_page_content_wrapper">
 		<div class="col-xs-9 col-md-9 ">
+            <?php dynamic_sidebar('sidebar-4');?>
 			<?php woocommerce_content(); ?>
 
 		</div>
