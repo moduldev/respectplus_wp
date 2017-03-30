@@ -75,3 +75,54 @@ add_theme_support('html5',array('search-form'));
  */
 
 add_theme_support('post-formats',array('aside','image','video'));
+
+/*
+	 ====================================================
+		Activate woocommerce plugin
+	 ====================================================
+ */
+
+
+add_theme_support( 'woocommerce' );
+
+//==============================================================================================
+/*
+	 ====================================================
+		Changed name of tabs in product page woocommerce
+	 ====================================================
+ */
+function woocommerce_default_product_tabs( $tabs = array() ) {
+	global $product, $post;
+
+	// Description tab - shows product content
+	if ( $post->post_content ) {
+		$tabs['description'] = array(
+			'title'    => __( 'Описание', 'woocommerce' ),
+			'priority' => 10,
+			'callback' => 'woocommerce_product_description_tab'
+		);
+	}
+
+	// Additional information tab - shows attributes
+	if ( $product && ( $product->has_attributes() || ( $product->enable_dimensions_display() && ( $product->has_dimensions() || $product->has_weight() ) ) ) ) {
+		$tabs['additional_information'] = array(
+			'title'    => __( 'Дополнительно', 'woocommerce' ),
+			'priority' => 20,
+			'callback' => 'woocommerce_product_additional_information_tab'
+		);
+	}
+
+	// Reviews tab - shows comments
+	if ( comments_open() ) {
+		$tabs['reviews'] = array(
+			'title'    => sprintf( __( 'Reviews (%d)', 'woocommerce' ), $product->get_review_count() ),
+			'priority' => 30,
+			'callback' => 'comments_template'
+		);
+	}
+
+	return $tabs;
+}
+
+
+
