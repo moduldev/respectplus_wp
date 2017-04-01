@@ -7,7 +7,7 @@
 <!--	</div>-->
 
 	<section class="about_page_content_wrapper">
-		<div class="col-xs-9 col-md-9 ">
+		<div class="col-xs-12 col-md-9 ">
             <?php dynamic_sidebar('sidebar-4');?>
 			<?php woocommerce_content(); ?>
 
