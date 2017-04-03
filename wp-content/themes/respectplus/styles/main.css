@@ -175,6 +175,7 @@
   padding: 0; }
   .submenu li {
     display: block;
+    width: 165px;
     padding: 0; }
 
 .menu .submenu {
@@ -647,7 +648,6 @@
   padding: 5px 20px; }
 
 .berocket_aapf_widget-wrapper select {
-  width: 130px;
   height: 26px;
   border: 1px solid #999999;
   -webkit-appearance: none;
@@ -694,7 +694,7 @@
     position: absolute;
     left: -255px; }
 
-p, span, a, h1, h2.h3, h4, h5, h6, li, input {
+p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
   font-family: 'Roboto', sans-serif !important; }
 
 .row.no_mg {
