@@ -3,7 +3,7 @@
     <div class="col-xs-12">
         <?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ?>
     </div>
-    <div class="col-xs-9 posts_wrapper">
+    <div class="col-xs-12 col-sm-9 posts_wrapper">
 <?php
 $currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ;
 $arg = array('post_per_page'=>3,'paged'=>$currentPage);
@@ -22,7 +22,7 @@ if ( $posts ) : ?>
 <!--		--><?php //previous_posts_link('Новые записи ');?>
 <!--	</div>-->
     </div>
-    <div class=" col-sm-3">
+    <div class="hidden-xs col-sm-3">
         <aside class="sidebar_page">
             <?php dynamic_sidebar('sidebar-3');?>
         </aside>

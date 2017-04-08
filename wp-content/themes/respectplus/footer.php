@@ -17,7 +17,7 @@
 
                 ); ?>
             </div>
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-4 ">
                 <span class="footer_title">Поиск по сайту</span>
                 <?php get_search_form();?>
             </div>

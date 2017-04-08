@@ -1,3 +1,9 @@
+@media screen and (max-width: 1200px){
+  .attributes_wrapper {
+    left: 65%;
+  }
+}
+
 @media screen and (max-width: 1024px){
   .remain_massage_box {
     .remain_massage_btn {
@@ -121,6 +127,54 @@
       text-transform: uppercase;
     }
   }
+  .woocommerce ul.products li.product a img {
+    position: static;
+    width:100% !important;
+  }
+  .products .woocommerce-LoopProduct-link h3 {
+    display: block;
+    width: 100%;
+  }
+  .attributes_wrapper {
+    position: static;
+    display: block;
+    padding-bottom: 50px;
+    margin-left:240px;
+  }
+  .products li .read_more_btn {
+    position: absolute;
+    right: auto;
+    left: 30%;
+    top: auto;
+    bottom: 10px;
+    padding: 10px 60px;
+  }
+  .page_contact_widget {
+    display: block;
+      &:last-child {
+        margin-top: 20px;
+      }
+  }
+  .products .woocommerce-LoopProduct-link {
+    display: block;
+    width:100%;
+  }
+  .attributes_wrapper p:nth-child(1):after, .attributes_wrapper p:nth-child(2):after, .attributes_wrapper p:nth-child(3):after {
+    left: -240px;
+  }
+  .berocket_aapf_widget input {
+    padding: 5px 80px;
+  }
+  .berocket_aapf_widget-wrapper ul {
+    width: 100%;
+  }
+  .berocket_aapf_widget-wrapper select {
+    width:100%;
+    outline-color: $colorblack;
+      &:focus {
+        outline-color: $colorblack;
+  }
+  }
 }
 
 @media screen and (max-width: 480px){
@@ -152,6 +206,21 @@
   .advantage_title {
     font-size: 30px;
     text-align: center;
+  }
+  .attributes_wrapper p {
+    font-size: 16px;
+  }
+  .attributes_wrapper {
+    margin-top:15px;
+    margin-left: 0;
+  }
+  .attributes_wrapper p:nth-child(1):after, .attributes_wrapper p:nth-child(2):after, .attributes_wrapper p:nth-child(3):after {
+    left: 0;
+    top: -13px;
+  }
+  .products li .read_more_btn {
+    left:auto;
+    width:94%;
   }
 }
 
