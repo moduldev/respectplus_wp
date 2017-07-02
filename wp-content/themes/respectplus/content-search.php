@@ -1,24 +1,23 @@
-<?php get_header();?>
-<section class="container main_section no_pd">
+<article class="post_wrapper clearfix " <?php post_class('description_event'); ?> id="<?php the_ID(); ?>">
 
-	<?php
-	$currentPage = (get_query_var('paged')) ? get_query_var('paged') : 1 ;
-	$arg = array('post_per_page'=>3,'paged'=>$currentPage);
-	$posts = query_posts( $arg);
+    <?php the_title(sprintf('<h1 class="content_news_title"><a class="content_news_title_text" href="%s">', esc_url(get_permalink())), '</a></h1>'); ?>
+    <div>
+        <span class="event_time"></span><span><?php the_time('F j, Y, H:i '); ?></span>
 
-	if ( $posts ) : ?>
-	<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-		<?php get_template_part('content', get_post_format()) ;?>
 
-	<?php endforeach; ?>
+        <span>Категория: </span><span class="content_category_link"><?php the_category(', '); ?></span>
+    </div>
 
-	<div class="pagination_container">
-		<?php next_posts_link(' Старые записи');?>
-	</div>
-	<div class="pagination_container">
-		<?php previous_posts_link('Новые записи ');?>
-	</div>
-</section>
+    <div class="col-xs-12 col-sm-12 content_excerpr_wrapper clearfix">
+        <?php if (is_single()) {
+            the_content(); ?>
+            <a class="btn read_more_btn text-right" href="<?php echo get_category_link(5); ?>">Вернуться в раздел
+                "Новости"</a>
 
-<?php endif; wp_reset_query(); ?>
-<?php get_footer();?>
+            <?php
+        } else {
+            the_excerpt(); ?>
+            <a class="btn read_more_btn text-right" href="<?php echo get_permalink() ?>">Подробнее</a>
+        <?php }; ?>
+    </div>
+</article>

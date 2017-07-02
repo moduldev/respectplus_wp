@@ -147,3 +147,10 @@
     margin-right:0;
   }
 }
+
+.no-products {
+  display: none;
+}
+.page-numbers {
+  @include color-link(#d84949)
+}

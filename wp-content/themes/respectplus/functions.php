@@ -67,7 +67,7 @@ add_theme_support('post-thumbnails');
 		Activate search form
 	 ====================================================
  */
-add_theme_support('html5',array('search-form'));
+add_theme_support('html5',array('my_search'));
 /*
 	 ====================================================
 		Activate post formats

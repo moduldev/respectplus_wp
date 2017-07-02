@@ -38,7 +38,7 @@ if ( ! woocommerce_products_will_display() )
 	if ( $total <= $per_page || -1 === $per_page ) {
 		printf( _n( 'Найдено одно совпадение', 'Найдены %d совпадений', $total, 'woocommerce' ), $total );
 	} else {
-		printf( _nx( 'Showing the single result', 'Showing %1$d&ndash;%2$d of %3$d results', $total, '%1$d = first, %2$d = last, %3$d = total', 'woocommerce' ), $first, $last, $total );
+		printf( _nx( 'Найден один результат', 'Найдено %1$d&ndash;%2$d из %3$d результатов', $total, '%1$d = first, %2$d = last, %3$d = total', 'woocommerce' ), $first, $last, $total );
 	}
 	?>
 </p>

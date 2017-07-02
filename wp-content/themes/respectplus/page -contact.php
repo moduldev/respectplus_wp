@@ -2,37 +2,23 @@
 /*
  * Template name: Форма обратной связи
  */
-get_header(); // эта строчка кода у вас может отличаться
+get_header();?>
+    <div class="container main_section">
+        <div class="row">
+            <h3>Контакты</h3>
+        </div>
+        <div class="row">
+            <script id="bx24_form_inline" data-skip-moving="true">
+                (function(w,d,u,b){w['Bitrix24FormObject']=b;w[b] = w[b] || function(){arguments[0].ref=u;
+                        (w[b].forms=w[b].forms||[]).push(arguments[0])};
+                    if(w[b]['forms']) return;
+                    s=d.createElement('script');r=1*new Date();s.async=1;s.src=u+'?'+r;
+                    h=d.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);
+                })(window,document,'https://b24-n591070cb2a788.bitrix24.ua/bitrix/js/crm/form_loader.js','b24form');
 
-/*
- * Тут мы будем обрабатывать ошибки и выводить соответствующие сообщения
- */
-if( isset( $_GET['msg'] ) ) {
-    // в случае успеха
-    if( $_GET['msg'] == 'success' )
-        echo '<span>Сообщение успешно отправлено</span>';
+                b24form({"id":"8","lang":"ua","sec":"ys2p8d","type":"inline"});
+            </script>
+        </div>
+    </div>
 
-    // в случае ошибки
-    if( $_GET['msg'] == 'error' )
-        echo '<span><strong>Ошибка:<strong> Проверьте правильность введённых вами данных.</span>';
-    // вы сами можете добавить различные другие сообщения об ошибках
-
-}
-
-/*
- * Антиспам-трюк
- * у нас есть два фейковых поля, при заполнении которых прерывается выполнение скрипта
- * сделаем так, чтобы они были скрыты для пользователей при помощи CSS
- */
-echo '<style>textarea[name="comment"],textarea[name="message"]{display:none}</style>';
-?>
-    <form action="<?php echo site_url() ?>/send.php" method="POST" style="padding-top: 250px">
-        <input type="text" name="name" required="true" placeholder="Имя *" />
-        <input type="text" name="email" required="true" placeholder="Email *" />
-        <textarea name="comment"></textarea>
-        <textarea name="message"></textarea>
-        <textarea name="soobschenie" required="true" placeholder="Сообщение *"></textarea>
-        <button>Отправить</button>
-    </form>
-<?php
-get_footer();?>
+<?php get_footer();?>

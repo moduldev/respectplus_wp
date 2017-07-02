@@ -709,6 +709,18 @@
   margin-bottom: 0;
   margin-right: 0; }
 
+.no-products {
+  display: none; }
+
+.page-numbers {
+  color: #d84949; }
+  .page-numbers:link {
+    text-decoration: none;
+    color: #d84949; }
+  .page-numbers:visited {
+    text-decoration: none;
+    color: #d84949; }
+
 p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
   font-family: 'Roboto', sans-serif !important; }
 
