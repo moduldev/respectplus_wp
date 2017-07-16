@@ -8,7 +8,7 @@
 .container_header_wrapper {
   position: fixed;
   width: 100%;
-  z-index: 999; }
+  z-index: 9999999999; }
 
 .contact_header_block {
   background: #111111; }
@@ -143,7 +143,7 @@
   float: right; }
   .menu li {
     display: inline-block;
-    padding: 27px 10px; }
+    padding: 27px 8px; }
   .menu li:not(.active_link) a:hover:after {
     position: absolute;
     content: '';
@@ -191,9 +191,6 @@
     width: 100%; }
   .submenu li a:hover:after {
     content: none !important; }
-
-.submenu li:hover {
-  background: #d84949; }
 
 .active_link a {
   color: #d84949 !important; }
@@ -487,6 +484,10 @@
 .about_page_content_wrapper {
   font-size: 16px; }
 
+.form_send_order {
+  font-family: Roboto, sans-serif;
+  font-size: 16px; }
+
 .post_wrapper {
   margin-bottom: 20px; }
   .post_wrapper img {
@@ -721,6 +722,34 @@
     text-decoration: none;
     color: #d84949; }
 
+.send_order {
+  display: block;
+  width: 150px;
+  background: #d84949 !important;
+  color: #fff !important;
+  margin-bottom: 50px !important;
+  margin-top: 50px; }
+
+.contacts_page_box {
+  padding: 40px 0 0 0; }
+  .contacts_page_box i {
+    color: #d84949;
+    font-size: 23px;
+    padding-right: 20px; }
+  .contacts_page_box p {
+    font-size: 16px; }
+    .contacts_page_box p span {
+      display: inline-block;
+      margin-left: 38px; }
+  .contacts_page_box a {
+    color: #111111; }
+    .contacts_page_box a:link {
+      text-decoration: none;
+      color: #111111; }
+    .contacts_page_box a:visited {
+      text-decoration: none;
+      color: #111111; }
+
 p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
   font-family: 'Roboto', sans-serif !important; }
 
@@ -766,6 +795,13 @@ p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
   .header_logo_box {
     width: 190px;
     height: 100px; }
+  .submenu {
+    display: block !important;
+    margin-top: 10px; }
+    .submenu li {
+      background: rgba(150, 148, 148, 0.9) !important;
+      box-shadow: inset 0px 0px 7px 12px rgba(0, 0, 0, 0.19);
+      width: 100%; }
   .header_logo_box h1 {
     margin: 0 0 0 5px;
     font-size: 30px; }
@@ -830,8 +866,15 @@ p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
 @media screen and (max-width: 640px) {
   .remain_massage_box .index_main_img_title {
     font-size: 30px; }
+  .send_order {
+    display: inline-block !important; }
+  .form_send_order {
+    padding: 15px;
+    text-align: center; }
+  .content_news_title_text {
+    font-size: 30px; }
   .icon_load_more .load_more_text {
-    font-size: 20px;
+    font-size: 11px;
     text-transform: uppercase; }
   .woocommerce ul.products li.product a img {
     position: static;

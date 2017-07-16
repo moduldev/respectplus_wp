@@ -24,7 +24,7 @@
         </div>
         <div class="row no_mg">
             <div class="col-xs-12  copyright_box">
-                <span class="copyright_text">Copyright © 2017 RespectPlus. Designed by <a href="#">[Module.Dev]</a> All rights reserved.
+                <span class="copyright_text">Copyright © 2017 RespectPlus. Designed by <a href="http://moduledev.com.ua">[Module.Dev]</a> All rights reserved.
 </span>
             </div>
         </div>

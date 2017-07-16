@@ -16,19 +16,18 @@
     <div class=" container-fluid contact_header_block no_pd ">
         <div class="container  no_pd">
             <div class="row header_contact_row no_mg clearfix">
-                <div class="col-sm-3 col-sm-offset-4 hidden-xs  col-md-offset-3 no_pd header_phone_block">
-                    <span><i class="fa fa-phone" aria-hidden="true"></i>Звоните нам: 098-559-49-49</span>
+                <div class="col-sm-5 col-sm-offset-4 hidden-xs  col-md-offset-3 no_pd header_phone_block">
+                    <span><i class="fa fa-phone" aria-hidden="true"></i>Звоните нам: 098-557-92-92, 063-557-92-92</span>
                 </div>
-                <div class="col-xs-12 col-sm-5 no_pd right header_social_box clearfix">
+                <div class="col-xs-12 col-sm-3 no_pd right header_social_box clearfix">
                     <ul class="header_social_icons ">
-                        <li class="social_icons_element"><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+                        <li class="social_icons_element"><a href="mailto:an.respectplus@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                         </li>
                         <li class="social_icons_element"><a href="#"><i class="fa fa-facebook"
                                                                         aria-hidden="true"></i></a></li>
                         <li class="social_icons_element"><a href="#"><i class="fa fa-google-plus"
                                                                         aria-hidden="true"></i></a></li>
-                        <li class="social_icons_element"><a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                        </li>
+
 
                     </ul>
                 </div>

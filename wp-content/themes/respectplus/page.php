@@ -18,7 +18,7 @@
     </div>
     <div class="row no_mg">
         <section class="about_page_content_wrapper">
-            <div class="col-xs-9 col-md-9 ">
+            <div class="col-xs-12 col-md-9 ">
                 <?php if (have_posts()): while (have_posts()): the_post(); ?>
 
                     <?php the_content(); ?>
@@ -26,7 +26,7 @@
                 <?php endwhile; endif; ?>
 
             </div>
-            <div class=" col-sm-3">
+            <div class="hidden-xs col-sm-3">
                 <aside class="sidebar_page">
                     <?php dynamic_sidebar('sidebar-3');?>
                 </aside>

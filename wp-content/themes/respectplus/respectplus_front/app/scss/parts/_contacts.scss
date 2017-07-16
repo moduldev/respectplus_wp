@@ -1,0 +1,18 @@
+.contacts_page_box {
+  padding: 40px 0 0 0;
+  i {
+    color: $colorred;
+    font-size: 23px;
+    padding-right: 20px;
+  }
+  p {
+    font-size: 16px;
+    span {
+      display: inline-block;
+      margin-left: 38px;
+    }
+  }
+  a {
+    @include color-link($colorblack);
+  }
+}
