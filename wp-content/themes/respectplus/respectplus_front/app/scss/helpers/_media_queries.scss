@@ -27,18 +27,30 @@
     width:190px;
     height:100px;
   }
+  .post_wrapper > div {
+    padding:0;
+  }
+  .container_header_wrapper {
+    position: static !important;
+  }
+  .sticky {
+    position: static !important;
+  }
   .submenu {
     display: block !important;
     margin-top: 10px;
       li {
-        background: rgba(150,148,148, 0.9) !important;
-        box-shadow: inset 0px 0px 7px 12px rgba(0,0,0,0.19);
+        background: none;
+        //box-shadow: inset 0px 0px 7px 12px rgba(0,0,0,0.19);
         width: 100%;
       }
   }
   .header_logo_box h1 {
     margin: 0 0 0 5px;
     font-size: 30px;
+  }
+  .main_section {
+    padding-top:25px;
   }
   .header_logo_box h2 {
     margin: 0 0 0 5px;
@@ -51,7 +63,7 @@
     background: #fff;
       .menu {
         display: none;
-        position: fixed;
+        position: static;
         width: 100%;
         text-align: center;
         background: rgba(0,0,0,0.95);
@@ -92,7 +104,7 @@
   .submenu {
     position: static;
       li {
-        background: #d84949;
+        //background: #d84949;
       }
   }
   .remain_massage_box {

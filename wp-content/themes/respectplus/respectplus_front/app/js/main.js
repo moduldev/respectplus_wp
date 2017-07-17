@@ -37,6 +37,8 @@ $(document).ready(function() {
 $(document).ready(function () {
    $('#menu_handler').click(function () {
        $(this).toggleClass('change');
+       $('.container_header_wrapper  ').toggleClass('static');
+       $('.navigation_wrapper ').toggleClass('static');
        $('.menu').toggleClass('show');
    })
 });

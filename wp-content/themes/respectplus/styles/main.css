@@ -777,6 +777,9 @@ p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
 .main_section {
   padding-top: 145px; }
 
+.static {
+  position: static !important; }
+
 @media screen and (max-width: 1200px) {
   .attributes_wrapper {
     left: 65%; } }
@@ -795,16 +798,23 @@ p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
   .header_logo_box {
     width: 190px;
     height: 100px; }
+  .post_wrapper > div {
+    padding: 0; }
+  .container_header_wrapper {
+    position: static !important; }
+  .sticky {
+    position: static !important; }
   .submenu {
     display: block !important;
     margin-top: 10px; }
     .submenu li {
-      background: rgba(150, 148, 148, 0.9) !important;
-      box-shadow: inset 0px 0px 7px 12px rgba(0, 0, 0, 0.19);
+      background: none;
       width: 100%; }
   .header_logo_box h1 {
     margin: 0 0 0 5px;
     font-size: 30px; }
+  .main_section {
+    padding-top: 25px; }
   .header_logo_box h2 {
     margin: 0 0 0 5px;
     font-size: 14px; }
@@ -814,7 +824,7 @@ p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
     background: #fff; }
     .menu_wrapper .menu {
       display: none;
-      position: fixed;
+      position: static;
       width: 100%;
       text-align: center;
       background: rgba(0, 0, 0, 0.95);
@@ -843,8 +853,6 @@ p, span, a, h1, h2.h3, h4, h5, h6, li, input, option, select {
     float: right !important; }
   .submenu {
     position: static; }
-    .submenu li {
-      background: #d84949; }
   .remain_massage_box {
     padding: 50px 0 50px 0; }
   .remain_massage_box .remain_massage_btn {
